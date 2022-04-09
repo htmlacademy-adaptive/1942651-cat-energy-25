@@ -1,0 +1,44 @@
+.additional-products {
+    margin: 0 auto;
+    width: 320px;
+}
+.additional-products__container {
+    padding: 25px 20px 20px;
+}
+.additional-products__title {
+    margin: 0;
+}
+.extra-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+.extra-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.heading {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #222222;
+}
+.extra-description {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+}
+.extra-button {
+    border: 0;
+    padding: 10px 115px;
+}

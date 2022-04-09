@@ -1,0 +1,31 @@
+.contacts {
+    margin: 0 auto;
+    width: 320px;
+}
+.contacts__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 20px;
+}
+.contacts__title {
+    margin: 0;
+}
+.title-contact {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+}
+.contacts__address {
+    margin-left: 20px;
+}
+.address {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+}

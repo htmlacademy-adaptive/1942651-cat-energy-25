@@ -1,6 +1,71 @@
 .site-nav__list {
-    display: none;
+    position: absolute;
+    top: 66px;
+    right: 0;
+    z-index: 1;
+    // display: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #ffffff;
+    width: 320px;
 }
 .site-nav__burger-button {
     margin-left: 65px;
+}
+.site-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 22px 0 24px;
+  border-top: 1px solid #E6E6E6;
+  & a {
+    color: #000000;
+    text-decoration: none;
+  }
+}
+@media (min-width: 768px) {
+  .main-header__nav {
+    margin-left: 94px;
+  }
+  .site-nav__list {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 440px;
+  }
+  .site-nav__burger-button {
+    display: none;
+  }
+  .site-nav__item {
+    border: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .main-header__nav {
+    margin-left: 595px;
+  }
+  .site-nav__list {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 478px;
+  }
+  .site-nav__burger-button {
+    display: none;
+  }
+  .site-nav__item {
+    border: 0;
+    & a {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }

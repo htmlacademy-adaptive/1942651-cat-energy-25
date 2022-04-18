@@ -1,0 +1,130 @@
+.living-example {
+    margin: 0 auto;
+    width: 320px;
+    background-color: #EAEAEA;
+}
+.living-example__container {
+    padding: 25px 20px 40px;
+}
+.living-example__title {
+    margin: 0;
+    margin-bottom: 40px;
+}
+.live-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+}
+.living-example__info {
+    margin: 0;
+    padding-bottom: 20px;
+}
+.live-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444;
+}
+.live-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.live-list__item {
+    margin-right: 32px;
+    margin-bottom: 34px;
+    position: relative;
+}
+.live-item--right {
+    margin-right: 0;
+}
+.live-item {
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.live-item__weight {
+    margin-top: 15px;
+    padding: 0 40px;
+}
+.weight {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+.live-item__weight-loss {
+    margin: 0;
+    padding: 0 20px;
+}
+.weight-loss {
+    position: absolute;
+    top: 46px;
+    left: 12px;
+    background-color: #EAEAEA;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+    margin: 0;
+    text-align: center;
+}
+.live-item__time {
+    margin-top: 15px;
+    padding: 0 21px 18px;
+}
+.time {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+.live-item__time-spent {
+    margin: 0;
+    padding: 0 20px;
+}
+.time-spent {
+    position: absolute;
+    top: 46px;
+    left: 12px;
+    background-color: #EAEAEA;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+    text-align: center;
+}
+.living-example__food-costs {
+    margin: 0;
+    margin-bottom: 40px;
+}
+.live-food-costs {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.slider__control {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.slider__control__before {
+    margin-left: 35px;
+}

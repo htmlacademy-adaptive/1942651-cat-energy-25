@@ -1,1 +1,40 @@
-// Начните писать стили здесь
+@use "./blocks/header.scss";
+@use "./blocks/nav.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/button.scss";
+@use "./blocks/programs.scss";
+@use "./blocks/how-its-working.scss";
+@use "./blocks/living-example.scss";
+@use "./blocks/contact.scss";
+@use "./blocks/map.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/extra.scss";
+@use "./blocks/presents.scss";
+@use "./blocks/input.scss";
+@use "./blocks/form.scss";
+
+@font-face {
+    font-family: 'Oswald';
+    src: url("../fonts/oswaldmedium.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url("../fonts/oswaldregular.woff2") format("woff2");
+    font-display: swap;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+body {
+    margin: 0 auto;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="stylesheet" href="./css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1942651-cat-energy-25/5/">
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__container">
+     <div class="main-header__logo logo-icon">
+       <a class="logo-icon__link" href="#">
+         <img src="./img/logo-mobile.svg" alt="">
+       </a>
+     </div>
+     <div class="main-header__logo-name">
+         <img class="logo-name" src="./img/logo-name.svg" alt="">
+     </div>
+     <nav class="main-header__nav site-nav">
+       <button class="site-nav__burger-button burger-button" type="button"></button>
+       <span class="visually-hidden">Открыть меню</span>
+       <ul class="site-nav__list">
+         <li class="site-nav__item site-nav__item--current">
+           <a>
+             главная
+           </a>
+         </li>
+         <li class="site-nav__item">
+           <a href="catalog.html">
+             каталог продукции
+           </a>
+         </li>
+         <li class="site-nav__item">
+           <a href="form.html">
+             подбор программы
+           </a>
+         </li>
+       </ul>
+     </nav>
+    </div>
+   </header>
+      <main class="main-container">
+       <section class="programs-selection">
+         <div class="programs-selection__container">
+           <h1 class="programs-selection__title title-form">Подбор программы</h1>
+             <form class="programs-selection__form form-programs" action="https://echo.htmlacademy.ru/" method="get">
+                 <h2 class="form-programs__title secondary-title">Заполните анкету, и мы подберем
+                  программу питания для вашего кота</h2>
+                  <ul class="form-programs__list data-list">
+                    <li class="data-list__item data-item">
+                      <label class="data-item__label" for="name">ИМЯ:*</label>
+                      <input class="data-item__input input" type="text" id="name" name="name" placeholder="барсик">
+                    </li>
+                    <li class="data-list__item data-item">
+                      <label class="data-item__label" for="weight">Вес (кг):*</label>
+                      <input class="data-item__input input" type="text" id="weight" name="weight" placeholder="7">
+                    </li>
+                    <li class="data-list__item data-item">
+                      <label class="data-item__label" for="age">Возраст (лет):</label>
+                      <input class="data-item__input input" type="text" id="age" name="age" placeholder="7">
+                    </li>
+                  </ul>
+                  <fieldset class="form-programs__fieldset radio-fieldset">
+                    <ul class="radio-fieldset__list">
+                      <li class="radio-fieldset__item">
+                        <label class="radio-fieldset__label">
+                          <input type="radio" name="weight-loss" value="true" checked>
+                          <span class="radio-fieldset__name">похудение</span>
+                        </label>
+                      </li>
+                      <li class="radio-fieldset__item">
+                        <label class="radio-fieldset__label">
+                          <input type="radio" name="weight-gain" value="false">
+                          <span class="radio-fieldset__name">Набор массы</span>
+                        </label>
+                      </li>
+                      <li class="radio-fieldset__item">
+                        <label class="radio-fieldset__label">
+                          <input type="radio" name="advice" value="false">
+                          <span class="radio-fieldset__name">Не знаю (Нужен ваш совет)</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="programs-selection__contacts-data contacts-data">
+                    <h2 class="contacts-data__title">Контактные данные
+                      (владельца кота)</h2>
+                    <ul class="contacts-data__list">
+                      <li class="contacts-data__item">
+                        <label class="contacts-data__label" for="email">E-mail:*</label>
+                          <input class="contacts-data__email contacts-data__email--icon input" id="email" type="email" placeholder="kuklachev@gmail.com">
+                      </li>
+                      <li class="contacts-data__item">
+                        <label class="contacts-data__label" for="phone">Телефон:*</label>
+                          <input class="contacts-data__phone contacts-data__phone--icon input" id="phone" type="text" placeholder="8 (960) 900-60-90">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="form-programs__coments coments">
+                    <h2 class="coments__title">Комментарий</h2>
+                    <label class="visually-hidden" for="coment"></label>
+                    <textarea class="coments__input input" type="textarea" rows="8" id="coment" name="coment" placeholder="Расскажите обо всех повАдках кота"></textarea>
+                  </div>
+                  <fieldset class="form-programs__additionally additionally">
+                    <h2 class="additionally__title">Дополнительно</h2>
+                    <ul class="additionally__list">
+                      <li class="additionally__item">
+                        <label class="additionally__label">
+                          <input class="additionally__radio" type="checkbox" name="sweetener">
+                          <span class="additionally__name">сахарозаменитель</span>
+                        </label>
+                      </li>
+                      <li class="additionally__item">
+                        <label class="additionally__label">
+                          <input class="additionally__radio" type="checkbox" name="water">
+                          <span class="additionally__name">питьевая вода</span>
+                        </label>
+                      </li>
+                      <li class="additionally__item">
+                        <label class="additionally__label">
+                          <input class="additionally__radio" type="checkbox" name="milk">
+                          <span class="additionally__name">молоко</span>
+                        </label>
+                      </li>
+                      <li class="additionally__item">
+                        <label class="additionally__label">
+                          <input class="additionally__radio" type="checkbox" name="vitamins">
+                          <span class="additionally__name">витамины</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <button class="form-programs__button form-button button" type="submit">отправить заявку</button>
+             </form>
+           <span class="programs-selection__required required">* — Обязательные поля</span>
+         </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__title title-contact">
+            приглашаем к сотрудничеству дилеров!
+          </h2>
+          <address class="contacts__address address">
+            ул. Большая 
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </address>
+        </div>
+      </section>
+      <section class="location">
+        <div class="location__container">
+          <img class="location__map-pin" src="" alt="">
+          <div class="location__map">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCUBZGFwHA" width="320" height="362" allowfullscreen="true">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__logo-name">
+        <img class="logo-name" src="./img/logo-name.svg" alt="" width="128" height="24">
+    </div>
+    <ul class="main-footer__socials-list social-list">
+      <li class="social-list__socials-item">
+        <a class="social-list__socials-item__vkontakte" href=""><svg width="27" height="17" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.0700912 1.99266C0.0700912 1.37082 0.493211 1.03552 1.33945 0.986745L4.60039 1.00503C4.81925 1.00503 4.96515 1.09648 5.03811 1.27938C5.37368 2.19385 5.74938 2.98334 6.16521 3.64785C6.58103 4.31237 7.12453 5.07748 7.79568 5.94317C7.85404 6.05291 7.94888 6.10778 8.08019 6.10778C8.18233 6.10778 8.26257 6.0651 8.32093 5.97975L8.38659 5.77857L8.40848 2.6145C8.40848 2.39503 8.34647 2.24871 8.22245 2.17556C8.09843 2.1024 7.86863 2.04753 7.53305 2.01095C7.27043 1.97437 7.13912 1.84025 7.13912 1.60859C7.13912 1.55981 7.14641 1.52323 7.161 1.49885C7.4674 0.706308 8.34282 0.310037 9.78726 0.310037L11.0129 0.291748C11.5673 0.291748 12.0269 0.407581 12.3916 0.639247C12.7564 0.870912 12.9388 1.2367 12.9388 1.73661V5.88831C13.0409 5.94927 13.1357 5.97975 13.2233 5.97975C13.4421 5.97975 13.6318 5.87002 13.7923 5.65054C15.3973 3.77283 16.2654 2.51696 16.3967 1.88293C16.3967 1.87073 16.4113 1.84025 16.4405 1.79148C16.5426 1.60859 16.7104 1.45008 16.9438 1.31595C17.1773 1.18183 17.3815 1.09039 17.5566 1.04161C17.615 1.01723 17.6806 1.00503 17.7536 1.00503H21.1459L21.3647 1.02332C21.6565 1.02332 21.8827 1.13916 22.0432 1.37082C22.1015 1.44398 22.1416 1.52323 22.1635 1.60859C22.1854 1.69394 22.2 1.77929 22.2073 1.86464C22.2146 1.94999 22.2182 1.99876 22.2182 2.01095V2.13898C22.1161 2.63889 21.8571 3.17233 21.4413 3.7393C21.0255 4.30627 20.4966 4.91897 19.8546 5.57739C19.2126 6.2358 18.8114 6.66865 18.6509 6.87593C18.5196 7.02225 18.4539 7.15637 18.4539 7.2783C18.4539 7.37584 18.5123 7.48558 18.629 7.60751L21.8243 10.9728C21.9994 11.1678 22.0869 11.3812 22.0869 11.6129C22.0869 11.8933 21.9556 12.125 21.693 12.3079C21.4304 12.4908 21.1167 12.5944 20.7519 12.6188L20.3799 12.6371H17.0533C17.0387 12.6371 17.0095 12.6401 16.9657 12.6462C16.9219 12.6523 16.8928 12.6554 16.8782 12.6554C16.5572 12.6554 16.2581 12.5396 15.9809 12.3079C15.8787 12.2103 15.193 11.491 13.9236 10.1497C13.8507 10.0644 13.7485 9.98513 13.6172 9.91197C13.5589 10.1071 13.4823 10.3875 13.3874 10.7533C13.2926 11.1191 13.2233 11.3812 13.1795 11.5397L13.1139 11.8506C12.968 12.2774 12.6616 12.5335 12.1947 12.6188L11.8883 12.6371H9.74349C8.53249 12.6371 7.32514 12.1738 6.12144 11.2471C4.91773 10.3204 3.8344 9.12248 2.87144 7.65323C1.90848 6.18398 1.01117 4.47392 0.179519 2.52306C0.106567 2.36455 0.0700912 2.18775 0.0700912 1.99266ZM13.2233 6.72962C12.9169 6.72962 12.6397 6.65951 12.3916 6.51929C12.1436 6.37907 12.0196 6.18703 12.0196 5.94317V1.73661C12.0196 1.49275 11.9466 1.319 11.8007 1.21536C11.6548 1.11172 11.3995 1.0599 11.0347 1.0599L9.78726 1.09648C9.15988 1.09648 8.68569 1.18793 8.36471 1.37082C9.00668 1.62687 9.32767 2.04143 9.32767 2.6145V5.83344C9.29849 6.13826 9.15258 6.39126 8.88996 6.59245C8.62733 6.79363 8.33552 6.89422 8.01454 6.89422C7.57683 6.89422 7.24125 6.71742 7.0078 6.36383C5.86975 4.92506 5.02351 3.55945 4.46908 2.267L4.27211 1.79148L1.36134 1.77319C1.17166 1.77319 1.06588 1.78233 1.044 1.80062C1.02211 1.81891 1.01117 1.87073 1.01117 1.95608C1.01117 2.06582 1.02576 2.18165 1.05494 2.30358L1.51454 3.32779C2.74013 5.97366 4.07149 8.05865 5.50864 9.58276C6.94579 11.1069 8.35741 11.8689 9.74349 11.8689H11.932C12.0196 11.8689 12.0852 11.8476 12.129 11.8049C12.1728 11.7623 12.2093 11.6799 12.2384 11.558L12.2822 11.3751L12.698 9.76566C12.8148 9.54619 12.9169 9.39987 13.0044 9.32671C13.1649 9.19259 13.3546 9.12553 13.5735 9.12553C13.9236 9.12553 14.2811 9.30233 14.6459 9.65592L16.5061 11.6312C16.6228 11.7897 16.7469 11.8689 16.8782 11.8689H20.4893C20.927 11.8689 21.1459 11.7775 21.1459 11.5946C21.1459 11.5336 21.124 11.4727 21.0802 11.4117L17.9068 8.10132C17.6588 7.84527 17.5347 7.57093 17.5347 7.2783C17.5347 6.98567 17.6515 6.70523 17.8849 6.43699C18.0746 6.19313 18.443 5.78771 18.9901 5.22074C19.5373 4.65377 20.0151 4.12338 20.4236 3.62956C20.8322 3.13575 21.1021 2.68766 21.2334 2.28529L21.299 2.04753C21.2845 2.02314 21.2772 1.98352 21.2772 1.92865C21.2772 1.87378 21.2699 1.82806 21.2553 1.79148H17.8193C17.6004 1.86464 17.4253 1.97437 17.294 2.12069L17.1627 2.46819C16.7979 3.3095 15.8423 4.60805 14.2957 6.36383C13.9893 6.60769 13.6318 6.72962 13.2233 6.72962Z" fill="#666666"/>
+          </svg></a>
+      </li>
+      <li class="social-list__socials-item">
+        <a class="social-list__socials-item__youtube" href=""><svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.8509 8.79275L10.6145 5.30184C10.5159 5.23691 10.4016 5.19985 10.2837 5.19459C10.1657 5.18934 10.0486 5.21608 9.94459 5.27198C9.84061 5.32789 9.75368 5.41087 9.69302 5.51215C9.63236 5.61343 9.60022 5.72924 9.6 5.84729V12.8291C9.60013 12.9481 9.6327 13.0648 9.69421 13.1667C9.75572 13.2686 9.84384 13.3518 9.94909 13.4073C10.0524 13.4631 10.1691 13.4895 10.2864 13.4837C10.4037 13.478 10.5172 13.4402 10.6145 13.3746L15.8509 9.88366C15.9409 9.82395 16.0148 9.7429 16.0658 9.64772C16.1169 9.55255 16.1436 9.44621 16.1436 9.3382C16.1436 9.23019 16.1169 9.12385 16.0658 9.02868C16.0148 8.93351 15.9409 8.85245 15.8509 8.79275ZM10.9091 11.6073V7.06911L14.3127 9.3382L10.9091 11.6073ZM23.3891 3.04366C23.2942 2.67547 23.1131 2.33511 22.8609 2.05061C22.6086 1.76611 22.2924 1.54561 21.9382 1.40729C18.2182 -0.0217993 12.2509 1.91553e-05 12 1.91553e-05C11.7491 1.91553e-05 5.78182 -0.0217993 2.06182 1.40729C1.70764 1.54561 1.3914 1.76611 1.13914 2.05061C0.886889 2.33511 0.705838 2.67547 0.610909 3.04366C0.327273 4.11275 0 6.07638 0 9.3382C0 12.6 0.327273 14.5637 0.610909 15.6327C0.705838 16.0009 0.886889 16.3413 1.13914 16.6258C1.3914 16.9103 1.70764 17.1308 2.06182 17.2691C5.78182 18.6982 11.7491 18.6764 12 18.6764H12.0764C12.8291 18.6764 18.3927 18.6327 21.9382 17.2691C22.2924 17.1308 22.6086 16.9103 22.8609 16.6258C23.1131 16.3413 23.2942 16.0009 23.3891 15.6327C23.6727 14.5637 24 12.6 24 9.3382C24 6.07638 23.6727 4.11275 23.3891 3.04366ZM22.1236 15.3055C22.0807 15.472 21.999 15.6259 21.8853 15.7548C21.7715 15.8838 21.6289 15.984 21.4691 16.0473C17.9782 17.3891 12.0655 17.3673 12 17.3673C11.9345 17.3673 6.02182 17.3891 2.53091 16.0473C2.37107 15.984 2.22846 15.8838 2.11471 15.7548C2.00096 15.6259 1.91929 15.472 1.87636 15.3055C1.61455 14.3018 1.30909 12.4582 1.30909 9.3382C1.30909 6.2182 1.61455 4.37457 1.87636 3.37093C1.91929 3.20445 2.00096 3.05047 2.11471 2.92156C2.22846 2.79264 2.37107 2.69243 2.53091 2.62911C6.02182 1.28729 11.9345 1.30911 12 1.30911C12.0655 1.30911 17.9782 1.28729 21.4691 2.62911C21.6289 2.69243 21.7715 2.79264 21.8853 2.92156C21.999 3.05047 22.0807 3.20445 22.1236 3.37093C22.3855 4.37457 22.6909 6.2182 22.6909 9.3382C22.6909 12.4582 22.3855 14.3018 22.1236 15.3055Z" fill="#666666"/>
+          </svg></a>
+      </li>
+      <li class="social-list__socials-item">
+        <a class="social-list__socials-item__telegram" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4608 0.152905C19.6393 0.302216 19.7255 0.534898 19.6872 0.764481L17.0611 16.5214C17.0244 16.7411 16.8789 16.9273 16.6745 17.0159C16.47 17.1045 16.2346 17.0833 16.0493 16.9597L8.17082 11.7074C8.01771 11.6054 7.91447 11.4437 7.88624 11.2619C7.858 11.08 7.90738 10.8947 8.02233 10.751L10.633 7.48773L6.27303 10.3944C6.077 10.525 5.82597 10.5407 5.61524 10.4353L0.362931 7.80915C0.127693 7.69153 -0.0146529 7.44488 0.00119976 7.18235C0.0170525 6.91983 0.188044 6.6921 0.435726 6.60364L18.8188 0.0382579C19.038 -0.0400244 19.2822 0.00359465 19.4608 0.152905ZM2.32626 7.32275L5.86168 9.09046L13.4231 4.0495C13.6925 3.86994 14.0525 3.91349 14.2712 4.1521C14.49 4.3907 14.5022 4.75314 14.3 5.00591L9.49502 11.0121L15.9328 15.3039L18.2083 1.65058L2.32626 7.32275Z" fill="#666666"/>
+          </svg></a>
+      </li>
+    </ul>
+    <div class="main-footer__copiryght copyright">
+      <p class="copyright__text academy-text">HTML Academy</p>
+      <a class="copyright__link academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+        </svg>
+      </a>
+    </div>
+    </footer>
+</body>
+</html>

@@ -17,3 +17,13 @@
         color: #444444;
     }
 }
+@media (min-width: 768px) {
+  .input {
+    font-size: 20px;
+    line-height: 30px;
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

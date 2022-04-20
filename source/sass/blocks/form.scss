@@ -155,20 +155,137 @@
     text-transform: uppercase;
     padding-bottom: 25px;
 }
-.form-programs__button {
+.form-programs__button-container__button {
     margin-bottom: 21px;
 }
 .form-button {
     padding: 10px 89px;
     border: 0;
 }
-.programs-selection__required {
-    display: flex;
-    justify-content: center;
+.form-programs__button-container__required {
+   display: flex;
+   justify-content: center;
 }
 .required {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+}
+@media (min-width: 768px) {
+  .programs-selection {
+    margin: 0 auto;
+    width: 768px;
+ }
+  .programs-selection__container {
+    padding: 0 67px 72px 70px;
+ }
+  .title-form {
+    font-size: 60px;
+    line-height: 60px;
+ }
+  .secondary-title {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 310px;
+ }
+  .data-item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .radio-fieldset {
+    border: 1px solid #E7E7E7;
+  }
+  .radio-fieldset__list {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 30px;
+  }
+  .contacts-data__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .contacts-data__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .contacts-data__phone--icon {
+    background-position: 500px 19px;
+  }
+  .contacts-data__email--icon {
+    background-position: 525px 22px;
+  }
+  .coments__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .additionally__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .additionally__list {
+    display: grid;
+    grid-template-columns: 384px 1fr;
+  }
+  .additionally__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .form-programs__button-container {
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    column-gap: 61px;
+  }
+  .form-programs__button-container__required {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .form-programs__button-container__button {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 13px 45px;
+    margin: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .programs-selection {
+    margin: 0 auto;
+    width: 1440px;
+ }
+  .programs-selection__container {
+    padding: 0 110px 82px;
+ }
+  .form-programs__container-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+ }
+  .data-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts-data__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+  .contacts-data__email {
+    padding: 10px 50px 10px 15px;
+  }
+  .contacts-data__phone {
+    padding: 10px 50px 10px 15px;
+  }
+  .additionally__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .additionally__item {
+    width: 325px;
+  }
+  .form-programs__button-container {
+    display: grid;
+    grid-template-columns: 568px 1fr;
+    column-gap: 82px;
+  }
 }

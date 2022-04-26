@@ -60,12 +60,12 @@
 }
 .live-item__weight-loss {
     margin: 0;
-    padding: 0 20px;
 }
 .weight-loss {
+    width: 80px;
     position: absolute;
     top: 46px;
-    left: 12px;
+    left: 20px;
     background-color: #EAEAEA;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -89,12 +89,12 @@
 }
 .live-item__time-spent {
     margin: 0;
-    padding: 0 20px;
 }
 .time-spent {
+    width: 80px;
     position: absolute;
     top: 46px;
-    left: 12px;
+    left: 25px;
     background-color: #EAEAEA;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -127,4 +127,141 @@
 }
 .slider__control__before {
     margin-left: 35px;
+}
+@media (min-width: 768px) {
+  .living-example {
+    width: 100%;
+    background: linear-gradient( #ffffff 55%, #EAEAEA 55%);
+  }
+  .living-example__container {
+    display: grid;
+    grid-template-columns: 366px 342px;
+    width: 708px;
+    margin: 0 auto;
+    padding: 43px 30px 60px;
+  }
+  .live-title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 63px;
+    margin: 0;
+  }
+  .live-info {
+    font-size: 16px;
+    line-height: 24px;
+    grid-column: 1/3;
+    padding-bottom: 54px;
+  }
+  .living-example__food-costs {
+    padding-top: 5px;
+    padding-left: 170px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+    grid-column: 2/2;
+    grid-row: 3/4;
+  }
+  .live-list {
+    padding-bottom: 60px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .time {
+    margin: 0;
+    padding: 15px 30px 20px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .time-spent {
+    width: 142px;
+    font-size: 14px;
+    line-height: 14px;
+    top: 62px;
+    left: 10px;
+    background-color: #ffffff;
+  }
+  .weight {
+    margin: 0;
+    padding: 15px 57px 20px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .weight-loss {
+    width: 114px;
+    font-size: 14px;
+    line-height: 14px;
+    top: 62px;
+    left: 25px;
+    background-color: #ffffff;
+  }
+  .living-example__slider {
+    width: 591px;
+    padding-left: 60px;
+  }
+  .slider__before {
+    width: 591px;
+    height: 511px;
+  }
+  .slider__range {
+    -webkit-appearance: none;
+    background: #DCDCDC;
+    border-radius: 6px;
+    width: 426px;
+    height: 6px;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1440px) {
+  .living-example {
+    width: 100%;
+    background: linear-gradient( #ffffff 30%, #F2F2F2 30%);
+  }
+  .living-example__container {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 627px 591px;
+    margin: 0 auto;
+    padding: 43px 120px 68px;
+  }
+  .living-example__slider {
+    grid-column: 2/3;
+    grid-row: 3/9;
+  }
+  .live-list {
+    grid-column: 1/3;
+    grid-row: 9/6;
+    padding-bottom: 35px;
+  }
+  .living-example__food-costs {
+    grid-column: 1/2;
+    grid-row: 8/8;
+    padding: 0;
+    padding-right: 360px;
+    margin: 0;
+  }
+  .live-info {
+    padding-right: 188px;
+    grid-column: 1/2;
+    grid-row: 5/6;
+    padding-bottom: 69px;
+  }
+  .live-title {
+    grid-row: 5/4;
+    padding-bottom: 146px;
+  }
+  .weight-loss {
+    background-color: #F2F2F2;
+  }
+  .time-spent {
+    background-color: #F2F2F2;
+  }
 }

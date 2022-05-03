@@ -42,3 +42,109 @@
     border: 0;
     padding: 10px 115px;
 }
+@media (min-width: 768px) {
+  .additional-products {
+    margin: 0 auto;
+    width: 768px;
+  }
+  .additional-products__container {
+    padding: 0 30px;
+  }
+  .extra-list {
+    border: 1px solid #CDCDCD;
+    border-top: 0;
+    box-sizing: border-box;
+    padding: 0 38px;
+  }
+  .extra-item {
+    position: relative;
+    padding: 26px 0 28px;
+    display: grid;
+    grid-template-columns: 415px 215px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 708px;
+      height: 1px;
+      background-color: #CDCDCD;
+      left: -38px;
+    }
+  }
+  .extra-button {
+    grid-column: 1/3;
+  }
+  .heading {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+  .extra-title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 0 80px 37px;
+  }
+  .extra-description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .additional-products {
+    margin: 0 auto;
+    width: 1440px;
+    display: flex;
+  }
+  .additional-products__container {
+    padding: 0 80px 86px 110px;
+  }
+  .extra-list {
+    width: 895px;
+    border: 0;
+    border-bottom: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .extra-item {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 165px 486px 244px;
+    grid-template-rows: 40px;
+    padding: 17px 0 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 895px;
+      height: 1px;
+      background-color: #CDCDCD;
+      left: 0;
+      top: 0;
+    }
+  }
+  .heading {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  .extra-title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 0 80px 37px;
+  }
+  .extra-description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .extra-button {
+    padding: 10px 97px;
+    grid-column: 3/4;
+  }
+  .extra-description {
+    padding-left: 160px;
+    padding-right: 38px;
+  }
+}

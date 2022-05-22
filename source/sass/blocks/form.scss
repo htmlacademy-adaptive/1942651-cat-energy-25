@@ -101,10 +101,10 @@
 }
 .additionally__check[type="checkbox"]:checked + .additionally__control-mark::before,
 .additionally__check[type="checkbox"]:checked + .additionally__control-mark::after {
-  content: url("../../img/mark.svg");
+  content: url("../img/mark.svg");
   position: absolute;
   left: 5px;
-  top: -2px;
+  top: 5px;
 }
 .additionally__name {
   padding-left: 46px;

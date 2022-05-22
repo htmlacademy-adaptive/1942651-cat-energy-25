@@ -69,8 +69,10 @@
 .copyright__link {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     text-decoration: none;
     fill: #666666;
+    width: 284px;
     &:hover {
       fill: #68B738;
     }
@@ -149,6 +151,7 @@
   }
   .copyright__link {
     margin-left: 22px;
+    width: auto;
  }
  .main-footer__socials-list {
    padding: 0;

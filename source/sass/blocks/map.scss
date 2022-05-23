@@ -2,22 +2,43 @@
     margin: 0 auto;
     width: 320px;
 }
-@media (min-width: 768px) {
+.location__map-map {
+    border: 0;
+    display: block;
+    position: relative;
+}
+.location__map {
+    background-image: url(../img/map.png);
+    width: 320px;
+    height: 362px;
+}
+@media (min-width: $tablet-width) {
   .location {
     margin: 0 auto;
-    width: 768px;
+    width: $tablet-width;
  }
  .location__map-map {
+    width: $tablet-width;
+    height: 400px;
+ }
+ .location__map {
+  background-image: url(../img/map-tablet.png);
   width: 768px;
   height: 400px;
  }
 }
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .location {
     margin: 0 auto;
-    width: 1440px;
+    width: $desktop-width;
  }
  .location__map-map {
+    width: $desktop-width;
+    height: 400px;
+    position: relative;
+ }
+ .location__map {
+  background-image: url(../img/map-desktop.png);
   width: 1440px;
   height: 400px;
  }

@@ -27,22 +27,27 @@
     text-transform: uppercase;
 }
 .data-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    @include list-reset;
+    padding-bottom: 10px;
 }
 .data-item {
     display: flex;
     align-items: center;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
 }
 .data-item__label {
-    padding-right: 10px;
+    padding-right: 14px;
+}
+.data-item__label--weight {
+    width: 93px;
+}
+.data-item__label--age {
+    width: 168px;
 }
 .data-item__input {
     padding: 13px 15px 14px;
@@ -53,11 +58,74 @@
     border-right: 0;
     margin: 0;
     padding: 0;
+    padding-top: 6px;
+}
+.radio-fieldset__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  &:hover .radio-fieldset__control-mark {
+    border: 1px solid #BABABA;
+  }
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+.additionally__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  &:hover .additionally__control-mark {
+    border: 1px solid #BABABA;
+  }
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+.radio-fieldset__control-mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #CDCDCD;
+  left: 0;
+  border-radius: 50%;
+}
+.additionally__control-mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #CDCDCD;
+  left: 0;
+}
+.additionally__check[type="checkbox"]:checked + .additionally__control-mark::before,
+.additionally__check[type="checkbox"]:checked + .additionally__control-mark::after {
+  content: url("../img/mark.svg");
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.additionally__name {
+  padding-left: 46px;
+}
+.radio-fieldset__name {
+  padding-left: 46px;
+}
+.radio-fieldset__label__radio[type="radio"]:checked + .radio-fieldset__control-mark::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #68B738;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 7.5px;
 }
 .radio-fieldset__list {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     color: #222222;
@@ -71,13 +139,35 @@
 .programs-selection__contacts-data {
     padding: 26px 0 10px;
 }
+.line {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #68B738;
+      z-index: -1;
+      top: 22%;
+    }
+}
+.line__container {
+    max-width: 320px;
+    margin: 0 auto;
+}
 .contacts-data__title {
+    display: inline-block;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 26px;
     margin: 0;
-    padding-bottom: 35px;
+    padding-bottom: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+    background-color: #ffffff;
+    width: 187px;
 }
 .contacts-data__list {
     padding: 0;
@@ -90,32 +180,45 @@
     justify-content: space-between;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
+    position: relative;
 }
 .contacts-data__label {
     padding-right: 10px;
+    width: 71px;
 }
-.contacts-data__email {
-    padding: 13px 50px 16px 15px;
+.svg__email {
+    position: absolute;
+    right: 15px;
+    stroke: #222222;
+}
+.svg__phone {
+    position: absolute;
+    right: 15px;
 }
 .contacts-data__phone {
-    padding: 13px 50px 16px 15px;
+    padding: 13px 50px 14px 15px;
+    &:focus + .svg__phone{
+      fill: #68B738;
+    }
+    &:invalid + .svg__phone{
+      fill: #FF8282;
+    }
 }
-.contacts-data__email--icon {
-    background-image: url("../img/email-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 200px 16px;
-}
-.contacts-data__phone--icon {
-    background-image: url("../img/phone-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 180px 12px;
+.contacts-data__email {
+  padding: 13px 50px 13px 15px;
+  &:focus + .svg__email{
+    stroke: #68B738;
+  }
+  &:invalid + .svg__email{
+    stroke: #FF8282;
+  }
 }
 .form-programs__coments {
-    padding-bottom: 24px;
+    padding-bottom: 13px;
 }
 .coments__title {
     font-family: "Oswald", sans-serif;
@@ -124,15 +227,18 @@
     line-height: 26px;
     margin: 0;
     padding-bottom: 38px;
+    padding-right: 20px;
+    width: 121px;
+    background-color: #ffffff;
 }
 .coments__input {
-    padding: 10px 15px 0 12px;
+    padding: 10px 13px 0 15px;
 }
 .additionally {
     padding: 0;
     border: 0;
     margin: 0;
-    padding-bottom: 9px;
+    padding-bottom: 14px;
 }
 .additionally__title {
     font-family: "Oswald", sans-serif;
@@ -141,6 +247,9 @@
     line-height: 26px;
     margin: 0;
     padding-bottom: 40px;
+    padding-right: 20px;
+    width: 141px;
+    background-color: #ffffff;
 }
 .additionally__list {
     padding: 0;
@@ -159,8 +268,10 @@
     margin-bottom: 21px;
 }
 .form-button {
-    padding: 10px 89px;
+    padding: 10px 78px;
     border: 0;
+    font-size: 16px;
+    line-height: 20px;
 }
 .form-programs__button-container__required {
    display: flex;
@@ -172,89 +283,174 @@
     font-size: 14px;
     line-height: 16px;
 }
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .programs-selection {
     margin: 0 auto;
     width: 768px;
  }
   .programs-selection__container {
-    padding: 0 67px 72px 70px;
+    padding: 30px 67px 72px 70px;
  }
   .title-form {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 55px;
  }
   .secondary-title {
     font-size: 20px;
     line-height: 30px;
-    padding-right: 310px;
+    padding-bottom: 66px;
  }
   .data-item {
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 20px;
+  }
+  .data-item__input {
+    padding: 9px 15px 11px;
+  }
+  .data-item__label {
+    padding-right: 20px;
+  }
+  .data-item__label--age {
+    width: 152px;
+  }
+  .radio-fieldset__item {
+    margin-bottom: 23px;
+  }
+  .data-list {
+    padding-bottom: 53px;
+  }
+  .programs-selection__contacts-data {
+    padding-top: 74px;
+    padding-bottom: 47px;
+  }
+  .additionally__control-mark {
+    width: 40px;
+    height: 40px;
+  }
+  .contacts-data__email {
+    padding: 12px 50px 11px 15px;
+  }
+  .contacts-data__phone {
+    padding: 11px 50px 11px 15px;
+    margin-left: 9px;
+  }
+  .radio-fieldset__control-mark {
+    width: 40px;
+    height: 40px;
+  }
+  .radio-fieldset__label__radio[type="radio"]:checked + .radio-fieldset__control-mark::before {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 10px;
+  }
+  .additionally__check[type="checkbox"]:checked + .additionally__control-mark::before,
+  .additionally__check[type="checkbox"]:checked + .additionally__control-mark::after {
+    content: url("../../img/mark-desktop.svg");
+    left: 7px;
+    top: 4px;
+  }
+  .additionally__name {
+    padding-left: 60px;
+  }
+  .radio-fieldset__name {
+    padding-left: 60px;
   }
   .radio-fieldset {
     border: 1px solid #E7E7E7;
+    padding-bottom: 7px;
   }
   .radio-fieldset__list {
     font-size: 20px;
     line-height: 30px;
     padding-left: 30px;
   }
+  .line__container {
+    max-width: 768px;
+ }
   .contacts-data__title {
     font-size: 36px;
     line-height: 36px;
+    padding-bottom: 73px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    width: 514px;
   }
   .contacts-data__item {
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 18px;
+  }
+  .contacts-data__label {
+    width: 92px;
   }
   .contacts-data__phone--icon {
-    background-position: 500px 19px;
+    background-position: right 14px top 16px;
   }
   .contacts-data__email--icon {
-    background-position: 525px 22px;
+    background-position: right 14px top 20px;
   }
   .coments__title {
     font-size: 36px;
     line-height: 36px;
+    padding-bottom: 75px;
+    padding-right: 40px;
+    width: 182px;
+  }
+  .coments__input {
+    padding: 10px 13px 0 20px;
+    height: 175px;
+  }
+  .form-programs__coments {
+    padding-bottom: 61px;
+  }
+  .additionally {
+    padding-bottom: 16px;
   }
   .additionally__title {
     font-size: 36px;
     line-height: 36px;
+    padding-bottom: 63px;
+    padding-right: 40px;
+    width: 211px;
   }
   .additionally__list {
     display: grid;
-    grid-template-columns: 384px 1fr;
+    grid-template-columns: 344px 1fr;
   }
   .additionally__item {
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 42px;
   }
   .form-programs__button-container {
     display: grid;
-    grid-template-columns: 282px 1fr;
+    grid-template-columns: 285px 1fr;
     column-gap: 61px;
   }
   .form-programs__button-container__required {
     display: flex;
     align-items: center;
     justify-content: start;
+    font-size: 16px;
   }
   .form-programs__button-container__button {
     font-size: 20px;
     line-height: 20px;
-    padding: 13px 45px;
+    padding: 16px 45px;
     margin: 0;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .programs-selection {
     margin: 0 auto;
     width: 1440px;
  }
   .programs-selection__container {
-    padding: 0 110px 82px;
+    padding: 45px 110px 85px;
  }
   .form-programs__container-desktop {
     display: grid;
@@ -264,6 +460,33 @@
   .data-list {
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .data-item__label--age {
+    width: 155px;
+  }
+  .radio-fieldset {
+    height: 179px;
+    padding-top: 9px;
+  }
+  .radio-fieldset__list {
+    padding-left: 27px;
+  }
+  .radio-fieldset__item {
+    margin-bottom: 23px;
+  }
+  .programs-selection__contacts-data {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .line {
+    width: 1220px;
+  }
+  .line__container {
+    max-width: 1440px;
+ }
+  .contacts-data__title {
+    padding-bottom: 75px;
   }
   .contacts-data__list {
     display: grid;
@@ -275,6 +498,12 @@
   }
   .contacts-data__phone {
     padding: 10px 50px 10px 15px;
+  }
+  .form-programs__coments {
+    padding-bottom: 63px;
+  }
+  .additionally {
+    padding-bottom: 23px;
   }
   .additionally__list {
     display: flex;

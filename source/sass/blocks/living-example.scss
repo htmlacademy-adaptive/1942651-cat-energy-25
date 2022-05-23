@@ -4,7 +4,7 @@
     background-color: #EAEAEA;
 }
 .living-example__container {
-    padding: 25px 20px 40px;
+    padding: 25px 20px 46px;
 }
 .living-example__title {
     margin: 0;
@@ -29,13 +29,11 @@
 }
 .live-list {
     display: flex;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    @include list-reset;
 }
 .live-list__item {
     margin-right: 32px;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
     position: relative;
 }
 .live-item--right {
@@ -115,30 +113,72 @@
     text-align: center;
     text-transform: uppercase;
 }
+.slider__control__before {
+    margin-left: 40px;
+    border-bottom: 1px dotted #CDCDCD;
+    box-sizing: border-box;
+    height: 32px;
+}
+.slider__control__after {
+    border-bottom: 1px dotted #CDCDCD;
+    box-sizing: border-box;
+    height: 32px;
+}
+.slider__after-image {
+    display: none;
+}
+.slider__range {
+    -webkit-appearance: none;
+    background: #ffffff;
+    border-radius: 6px;
+    width: 85px;
+    height: 14px;
+    box-sizing: border-box;
+    border: 1px solid #CDCDCD;
+    border-radius: 6px;
+    padding: 4px 6px;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 18px;
+}
+input[type='range']::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+     width: 35px;
+     height:6px;
+     background: #68B738;
+     box-sizing: border-box;
+     border-radius: 6px;
+}
 .slider__control {
     font-family: "Oswald", sans-serif;
-    font-weight: 400;
+    text-transform: uppercase;
     font-size: 16px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
+    &:hover .slider__control__before {
+      border-bottom: 1px solid #CDCDCD;
+    }
+    &:hover .slider__control__after {
+      border-bottom: 1px solid #CDCDCD;
+    }
+    &:active .slider__control__before {
+      border: 0;
+    }
+    &:active .slider__control__after {
+      border: 0;
+    }
 }
-.slider__control__before {
-    margin-left: 35px;
-}
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .living-example {
     width: 100%;
-    background: linear-gradient( #ffffff 55%, #EAEAEA 55%);
+    background: linear-gradient( #ffffff 57.3%, #EAEAEA 55%);
   }
   .living-example__container {
     display: grid;
     grid-template-columns: 366px 342px;
     width: 708px;
     margin: 0 auto;
-    padding: 43px 30px 60px;
+    padding: 43px 30px 20px;
   }
   .live-title {
     font-size: 60px;
@@ -153,10 +193,10 @@
     padding-bottom: 54px;
   }
   .living-example__food-costs {
-    padding-top: 5px;
+    padding-top: 6px;
     padding-left: 170px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 28px;
     text-align: end;
     grid-column: 2/2;
     grid-row: 3/4;
@@ -165,6 +205,9 @@
     padding-bottom: 60px;
     grid-column: 1/3;
     grid-row: 3/4;
+  }
+  .live-list__item {
+     margin-right: 40px;
   }
   .time {
     margin: 0;
@@ -198,52 +241,109 @@
     width: 591px;
     padding-left: 60px;
   }
-  .slider__before {
-    width: 591px;
-    height: 511px;
-  }
+  .slider {
+    position: relative;
+    height: 601px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.slider__item {
+    min-width: 296px;
+    position: absolute;
+    top: -9px;
+}
+.slider__item--before {
+    left: 0;
+    width: 43%;
+    overflow: hidden;
+    margin-left: 60px;
+}
+.slider__item--after {
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    opacity: 1;
+    clip: rect(auto,690px,auto,355px);
+}
+.slider__control {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+.slider__before-image {
+    width: 644px;
+    height: 500px;
+    max-width: 644px;
+}
+.slider__after-image {
+    height: 510px;
+    width: 536px;
+    display: block;
+    margin-left: auto;
+}
+.slider__control__before {
+    margin-left: 12px;
+}
+.slider__control__after {
+    margin-left: 6px;
+}
   .slider__range {
     -webkit-appearance: none;
     background: #DCDCDC;
     border-radius: 6px;
     width: 426px;
     height: 6px;
+    padding: 0;
+    border: 0;
+    margin-right: 23px;
   }
   input[type='range']::-webkit-slider-thumb {
     position: relative;
     -webkit-appearance: none;
-    width: 34px;
-    height: 34px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-    background: #FFFFFF;
-    border: 1px solid #CDCDCD;
+    background: #68B738;
+    box-shadow: 0px 0px 0px 12px #ffffff, 0px 0px 0px 13px #CDCDCD;
     box-sizing: border-box;
+    &:active {
+      box-shadow: 0px 0px 0px 12px #ffffff, 0px 0px 0px 13px #68B738;
+    }
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .living-example {
     width: 100%;
-    background: linear-gradient( #ffffff 30%, #F2F2F2 30%);
+    background: linear-gradient( #ffffff 25.5%, #F2F2F2 21%);
   }
   .living-example__container {
     width: 1220px;
     display: grid;
     grid-template-columns: 627px 591px;
     margin: 0 auto;
-    padding: 43px 120px 68px;
+    padding: 23px 120px 0;
   }
   .living-example__slider {
     grid-column: 2/3;
     grid-row: 3/9;
+    padding-left: 5px;
   }
   .live-list {
     grid-column: 1/3;
-    grid-row: 9/6;
-    padding-bottom: 35px;
+    grid-row: 6/6;
+    padding-bottom: 26px;
   }
   .living-example__food-costs {
     grid-column: 1/2;
-    grid-row: 8/8;
+    grid-row: 7/8;
     padding: 0;
     padding-right: 360px;
     margin: 0;
@@ -251,12 +351,12 @@
   .live-info {
     padding-right: 188px;
     grid-column: 1/2;
-    grid-row: 5/6;
-    padding-bottom: 69px;
+    grid-row: 4/6;
+    padding-bottom: 67px;
   }
   .live-title {
-    grid-row: 5/4;
-    padding-bottom: 146px;
+    grid-row: 3/4;
+    padding-bottom: 147px;
   }
   .weight-loss {
     background-color: #F2F2F2;
@@ -264,4 +364,28 @@
   .time-spent {
     background-color: #F2F2F2;
   }
+  .slider__control {
+    padding-bottom: 0;
+    margin-bottom: 74px;
+  }
+  .slider__item--before {
+    left: 0;
+    width: 43%;
+    overflow: hidden;
+    margin-left: -119px;
+}
+  .slider__item--after {
+    clip: rect(auto,690px,auto,299px);
+}
+  .slider__item {
+    min-width: 418px;
+    top: -42px;
+}
+  .live-food-costs {
+    padding: 0;
+    text-align: start;
+}
+  .live-food-costs__cost {
+    margin-left: 60px;
+}
 }

@@ -1,6 +1,7 @@
 .additional-products {
     margin: 0 auto;
     width: 320px;
+    padding-bottom: 36px;
 }
 .additional-products__container {
     padding: 25px 20px 20px;
@@ -8,18 +9,31 @@
 .additional-products__title {
     margin: 0;
 }
+.extra-item {
+  position: relative;
+    padding-bottom: 32px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 1px;
+      background-color: #CDCDCD;
+      bottom: 14px;
+    }
+}
 .extra-title {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
+    padding-bottom: 35px;
 }
 .extra-list {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    @include list-reset;
+    border-top: 1px solid #CDCDCD;
+    padding-top: 13px;
 }
 .heading {
     font-family: "Oswald", sans-serif;
@@ -28,6 +42,8 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #222222;
+    margin: 0;
+    padding-bottom: 10px;
 }
 .extra-description {
     display: flex;
@@ -37,12 +53,17 @@
     font-size: 14px;
     line-height: 20px;
     color: #444444;
+    margin: 0;
+    padding-bottom: 12px;
 }
 .extra-button {
     border: 0;
-    padding: 10px 115px;
+    padding: 10px 110px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
 }
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .additional-products {
     margin: 0 auto;
     width: 768px;
@@ -60,7 +81,7 @@
     position: relative;
     padding: 26px 0 28px;
     display: grid;
-    grid-template-columns: 415px 215px;
+    grid-template-columns: 405px 225px;
     &::before {
       content: "";
       position: absolute;
@@ -69,9 +90,14 @@
       background-color: #CDCDCD;
       left: -38px;
     }
+    &::after {
+      display: none;
+    }
   }
   .extra-button {
     grid-column: 1/3;
+    font-size: 16px;
+    line-height: 20px;
   }
   .heading {
     font-size: 20px;
@@ -90,14 +116,14 @@
     line-height: 20px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .additional-products {
     margin: 0 auto;
     width: 1440px;
     display: flex;
   }
   .additional-products__container {
-    padding: 0 80px 86px 110px;
+    padding: 0 80px 87px 110px;
   }
   .extra-list {
     width: 895px;
@@ -132,7 +158,8 @@
   .extra-title {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 0 80px 37px;
+    padding: 0px 40px 80px 40px;
+    margin-left: -40px;
   }
   .extra-description {
     margin: 0;

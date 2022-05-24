@@ -2,14 +2,14 @@
     border: 1px solid #E7E7E7;
     box-sizing: border-box;
     width: 100%;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Tahoma", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     color: #444444;
     &::placeholder {
-        font-family: "Oswald", sans-serif;
+        font-family: "Oswald", "Tahoma", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 18px;
@@ -25,6 +25,9 @@
     &:invalid {
       outline: 2px solid #FF8282;
     }
+}
+.input::-moz-placeholder {
+  opacity: 1;
 }
 @media (min-width: $tablet-width) {
   .input {

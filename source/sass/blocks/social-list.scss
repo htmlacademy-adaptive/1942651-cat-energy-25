@@ -1,0 +1,24 @@
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @include list-reset;
+  padding: 20px 0;
+}
+.social-list__socials-item-vkontakte {
+  display: block;
+  margin-right: 26px;
+}
+.social-list__socials-item-youtube {
+  margin-right: 30px;
+}
+.socials-icon {
+fill: #666666;
+&:hover {
+  fill: #68B738;
+}
+&:active {
+  opacity: 0.3;
+}
+}

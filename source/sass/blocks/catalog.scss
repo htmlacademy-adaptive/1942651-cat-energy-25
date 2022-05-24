@@ -5,14 +5,6 @@
 .catalog__container {
     padding: 28px 20px 0 ;
 }
-.title-catalog {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  margin: 0;
-  padding-bottom: 41px;
-}
 @media (min-width: $tablet-width) {
   .catalog {
     margin: 0 auto;
@@ -20,12 +12,6 @@
   }
   .catalog__container {
     padding: 32px 30px 68px;
-  }
-  .title-catalog {
-    margin: 0;
-    padding-bottom: 163px;
-    font-size: 60px;
-    line-height: 60px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -35,8 +21,5 @@
   }
   .catalog__container {
     padding: 45px 110px 75px;
-  }
-  .title-catalog {
-    padding-bottom: 167px;
   }
 }

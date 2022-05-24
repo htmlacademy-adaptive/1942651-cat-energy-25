@@ -1,0 +1,111 @@
+.contacts-data__title {
+  display: inline-block;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  padding-bottom: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -20px;
+  background-color: #ffffff;
+  width: 187px;
+}
+.contacts-data__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.contacts-data__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  position: relative;
+}
+.contacts-data__label {
+  padding-right: 10px;
+  width: 71px;
+}
+.contacts-data__svg-email {
+  position: absolute;
+  right: 15px;
+  stroke: #222222;
+}
+.contacts-data__svg-phone {
+  position: absolute;
+  right: 15px;
+}
+.contacts-data__phone {
+  padding: 13px 50px 14px 15px;
+  &:focus + .contacts-data__svg-phone {
+    fill: #68B738;
+  }
+  &:invalid + .contacts-data__svg-phone{
+    fill: #FF8282;
+  }
+}
+.contacts-data__email {
+padding: 13px 50px 13px 15px;
+&:focus + .contacts-data__svg-email {
+  stroke: #68B738;
+}
+&:invalid + .contacts-data__svg-email {
+  stroke: #FF8282;
+}
+}
+
+@media (min-width: $tablet-width) {
+.contacts-data__email {
+  padding: 12px 50px 11px 15px;
+}
+.contacts-data__phone {
+  padding: 11px 50px 11px 15px;
+  margin-left: 9px;
+}
+.contacts-data__title {
+  font-size: 36px;
+  line-height: 36px;
+  padding-bottom: 73px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: -40px;
+  width: 514px;
+}
+.contacts-data__item {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 18px;
+}
+.contacts-data__label {
+  width: 92px;
+}
+.contacts-data__phone--icon {
+  background-position: right 14px top 16px;
+}
+.contacts-data__email--icon {
+  background-position: right 14px top 20px;
+}
+}
+@media (min-width: $desktop-width) {
+.contacts-data__title {
+  padding-bottom: 75px;
+}
+.contacts-data__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+}
+.contacts-data__email {
+  padding: 10px 50px 10px 15px;
+}
+.contacts-data__phone {
+  padding: 10px 50px 10px 15px;
+}
+}

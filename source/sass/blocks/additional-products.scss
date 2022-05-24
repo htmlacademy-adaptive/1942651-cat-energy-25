@@ -1,0 +1,30 @@
+.additional-products {
+  margin: 0 auto;
+  width: 320px;
+  padding-bottom: 36px;
+}
+.additional-products__container {
+  padding: 25px 20px 20px;
+}
+.additional-products__title {
+  margin: 0;
+}
+@media (min-width: $tablet-width) {
+.additional-products {
+  margin: 0 auto;
+  width: 768px;
+}
+.additional-products__container {
+  padding: 0 30px;
+}
+}
+@media (min-width: $desktop-width) {
+.additional-products {
+  margin: 0 auto;
+  width: 1440px;
+  display: flex;
+}
+.additional-products__container {
+  padding: 0 80px 87px 110px;
+}
+}

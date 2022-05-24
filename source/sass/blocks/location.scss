@@ -1,6 +1,6 @@
 .location {
     margin: 0 auto;
-    width: 320px;
+    min-width: 320px;
 }
 .location__map-map {
     border: 0;
@@ -9,37 +9,33 @@
 }
 .location__map {
     background-image: url(../img/map.png);
-    width: 320px;
+    background-repeat: no-repeat;
+    width: 100%;
     height: 362px;
 }
 @media (min-width: $tablet-width) {
   .location {
     margin: 0 auto;
-    width: $tablet-width;
+    width: 100%;
  }
  .location__map-map {
-    width: $tablet-width;
     height: 400px;
  }
  .location__map {
   background-image: url(../img/map-tablet.png);
-  width: 768px;
   height: 400px;
  }
 }
 @media (min-width: $desktop-width) {
   .location {
     margin: 0 auto;
-    width: $desktop-width;
  }
  .location__map-map {
-    width: $desktop-width;
     height: 400px;
     position: relative;
  }
  .location__map {
   background-image: url(../img/map-desktop.png);
-  width: 1440px;
   height: 400px;
  }
 }

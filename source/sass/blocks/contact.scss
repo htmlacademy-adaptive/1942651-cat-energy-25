@@ -14,22 +14,6 @@
 .contacts__title {
     margin: 0;
 }
-.title-contact {
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #111111;
-}
-.address {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #444444;
-}
 @media (min-width: $tablet-width) {
   .contacts {
     width: 100%;
@@ -41,18 +25,6 @@
     justify-content: space-between;
     padding: 60px 70px 60px;
  }
- .title-contact {
-    font-size: 20px;
-    line-height: 26px;
- }
- .address {
-    font-size: 16px;
-    text-align: right;
- }
- .address__city {
-    display: block;
-    padding-top: 20px;
-}
 }
 @media (min-width: $desktop-width) {
   .contacts{
@@ -71,8 +43,4 @@
     left: 111px;
     top: 92px;
   }
-  .address {
-    font-size: 16px;
-    text-align: left;
- }
 }

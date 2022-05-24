@@ -4,6 +4,10 @@
     width: 320px;
     background-repeat: no-repeat;
     background-image: url("../img/present-back.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/present-mobile@2x.png);
+      background-size: 280px auto;
+    }
     background-position: 20px;
     &::after {
         content: url("../img/icon_gift.svg");
@@ -39,6 +43,10 @@
     padding: 69px 30px 76px;
     background-repeat: no-repeat;
     background-image: url("../img/back-presents-tablet.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/present-tablet@2x.png);
+      background-size: 707px auto;
+    }
     background-position: 30px;
     margin-top: -10px;
     &::after {
@@ -65,6 +73,10 @@
     margin: 0;
     margin-top: 20px;
     background-image: url("../img/presents-back-desktop.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/present-desktop@2x.png);
+      background-size: 246px auto;
+    }
     background-size: 245px 290px;
     background-position: 0;
     &::after {
@@ -97,5 +109,6 @@
  }
   .additional-products__presents {
     margin-top: 28px;
+    height: 463px;
   }
 }

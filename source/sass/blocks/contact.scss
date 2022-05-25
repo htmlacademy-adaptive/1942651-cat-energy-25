@@ -1,44 +1,51 @@
 .contacts {
-    margin: 0 auto;
-    width: 320px;
+  margin: 0 auto;
+  width: 320px;
 }
+
 .contacts__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 26px 20px;
-    background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 20px;
+  background-color: #f2f2f2;
 }
+
 .contacts__container--main {
   background-color: #ffffff;
 }
+
 .contacts__title {
-    margin: 0;
+  margin: 0;
 }
+
 @media (min-width: $tablet-width) {
   .contacts {
     width: 100%;
   }
+
   .contacts__container {
     width: 628px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 60px 70px 60px;
- }
+  }
 }
+
 @media (min-width: $desktop-width) {
-  .contacts{
+  .contacts {
     margin: 0 auto;
     width: 1440px;
     position: relative;
   }
+
   .contacts__container {
     position: absolute;
     width: 403px;
     height: 198px;
     align-items: center;
-    background-color: #fff;
-    padding: 0px 80px;
+    background-color: #ffffff;
+    padding: 0 80px;
     z-index: 1;
     left: 111px;
     top: 92px;

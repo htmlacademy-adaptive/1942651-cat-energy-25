@@ -1,31 +1,36 @@
 .additionally__label {
-position: relative;
-display: flex;
-align-items: center;
-&:hover .additionally__control-mark {
-  border: 1px solid #BABABA;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:hover .additionally__control-mark {
+    border: 1px solid #bababa;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+  }
 }
-&--disabled {
-  opacity: 0.3;
-}
-}
+
 .additionally__control-mark {
-position: absolute;
-width: 30px;
-height: 30px;
-box-sizing: border-box;
-border: 1px solid #CDCDCD;
-left: 0;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  left: 0;
 }
+
 .additionally__check[type="checkbox"]:checked + .additionally__control-mark::before,
 .additionally__check[type="checkbox"]:checked + .additionally__control-mark::after {
-content: url("../img/mark.svg");
-position: absolute;
-left: 5px;
-top: 5px;
+  content: url("../img/mark.svg");
+  position: absolute;
+  left: 5px;
+  top: 5px;
 }
+
 .additionally__name {
-padding-left: 46px;
+  padding-left: 46px;
 }
 
 .additionally {
@@ -34,6 +39,7 @@ padding-left: 46px;
   margin: 0;
   padding-bottom: 14px;
 }
+
 .additionally__title {
   font-family: "Oswald", "Tahoma", sans-serif;
   font-weight: 400;
@@ -47,11 +53,13 @@ padding-left: 46px;
   width: 141px;
   background-color: #ffffff;
 }
+
 .additionally__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
+
 .additionally__item {
   font-family: "Oswald", "Tahoma", sans-serif;
   font-weight: 400;
@@ -60,52 +68,61 @@ padding-left: 46px;
   text-transform: uppercase;
   padding-bottom: 25px;
 }
+
 @media (min-width: $tablet-width) {
-.additionally__control-mark {
-  width: 40px;
-  height: 40px;
+  .additionally__control-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .additionally__check[type="checkbox"]:checked + .additionally__control-mark::before,
+  .additionally__check[type="checkbox"]:checked + .additionally__control-mark::after {
+    content: url("../../img/mark-desktop.svg");
+    left: 7px;
+    top: 4px;
+  }
+
+  .additionally__name {
+    padding-left: 60px;
+  }
+
+  .additionally {
+    padding-bottom: 16px;
+  }
+
+  .additionally__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 63px;
+    padding-right: 40px;
+    width: 211px;
+    padding-left: 40px;
+    margin-left: -40px;
+  }
+
+  .additionally__list {
+    display: grid;
+    grid-template-columns: 344px 1fr;
+  }
+
+  .additionally__item {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 42px;
+  }
 }
 
-.additionally__check[type="checkbox"]:checked + .additionally__control-mark::before,
-.additionally__check[type="checkbox"]:checked + .additionally__control-mark::after {
-  content: url("../../img/mark-desktop.svg");
-  left: 7px;
-  top: 4px;
-}
-.additionally__name {
-  padding-left: 60px;
-}
-.additionally {
-  padding-bottom: 16px;
-}
-.additionally__title {
-  font-size: 36px;
-  line-height: 36px;
-  padding-bottom: 63px;
-  padding-right: 40px;
-  width: 211px;
-  padding-left: 40px;
-  margin-left: -40px;
-}
-.additionally__list {
-  display: grid;
-  grid-template-columns: 344px 1fr;
-}
-.additionally__item {
-  font-size: 20px;
-  line-height: 30px;
-  padding-bottom: 42px;
-}
-}
 @media (min-width: $desktop-width) {
-.additionally {
-  padding-bottom: 23px;
-}
-.additionally__list {
-  display: flex;
-  justify-content: space-between;
-}
-.additionally__item {
-  width: 305px;
-}
+  .additionally {
+    padding-bottom: 23px;
+  }
+
+  .additionally__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additionally__item {
+    width: 305px;
+  }
 }

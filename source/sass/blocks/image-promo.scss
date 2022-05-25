@@ -1,0 +1,21 @@
+.image-promo {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .image-promo {
+    width: 708px;
+    height: 609px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .image-promo {
+    position: absolute;
+    z-index: 2;
+    width: 552px;
+    height: 500px;
+    left: 558px;
+    top: 0;
+  }
+}

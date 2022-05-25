@@ -3,6 +3,7 @@
   @include list-reset;
   padding-bottom: 10px;
 }
+
 .data-item {
   display: flex;
   align-items: center;
@@ -13,47 +14,59 @@
   text-transform: uppercase;
   padding-bottom: 12px;
 }
+
 .data-item__label {
   padding-right: 14px;
 }
+
 .data-item__label--weight {
   width: 93px;
 }
+
 .data-item__label--age {
   width: 168px;
 }
+
 .data-item__input {
   padding: 13px 15px 14px;
 }
+
 @media (min-width: $tablet-width) {
-.data-item {
-  font-size: 20px;
-  line-height: 30px;
-  padding-bottom: 20px;
+  .data-item {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+
+  .data-item__input {
+    padding: 9px 15px 11px;
+  }
+
+  .data-item__label {
+    padding-right: 20px;
+  }
+
+  .data-item__label--age {
+    width: 152px;
+  }
+
+  .radio-fieldset__item {
+    margin-bottom: 23px;
+  }
+
+  .data-list {
+    padding-bottom: 53px;
+  }
 }
-.data-item__input {
-  padding: 9px 15px 11px;
-}
-.data-item__label {
-  padding-right: 20px;
-}
-.data-item__label--age {
-  width: 152px;
-}
-.radio-fieldset__item {
-  margin-bottom: 23px;
-}
-.data-list {
-  padding-bottom: 53px;
-}
-}
+
 @media (min-width: $desktop-width) {
-.data-list {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 50px;
-}
-.data-item__label--age {
-  width: 155px;
-}
+  .data-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .data-item__label--age {
+    width: 155px;
+  }
 }

@@ -1,0 +1,38 @@
+.description-list {
+  font-family: "Arial", "Helvetical", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.description-list__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .description-list {
+    font-size: 16px;
+    padding-bottom: 31px;
+  }
+
+  .description-list__item {
+    padding: 8px 0;
+    border-bottom: 1px solid #cdcdcd;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-list {
+    font-size: 16px;
+    padding-bottom: 31px;
+  }
+
+  .description-list__item {
+    padding: 8px 3px;
+    border-bottom: 1px solid #cdcdcd;
+    align-items: center;
+  }
+}

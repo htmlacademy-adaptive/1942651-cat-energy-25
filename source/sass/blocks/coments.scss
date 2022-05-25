@@ -11,21 +11,24 @@
   width: 121px;
   background-color: #ffffff;
 }
+
 .coments__input {
   padding: 10px 13px 0 15px;
 }
+
 @media (min-width: $tablet-width) {
-.coments__title {
-  font-size: 36px;
-  line-height: 36px;
-  padding-bottom: 75px;
-  padding-right: 40px;
-  width: 182px;
-  padding-left: 40px;
-  margin-left: -40px;
-}
-.coments__input {
-  padding: 10px 13px 0 20px;
-  height: 175px;
-}
+  .coments__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 75px;
+    padding-right: 40px;
+    width: 182px;
+    padding-left: 40px;
+    margin-left: -40px;
+  }
+
+  .coments__input {
+    padding: 10px 13px 0 20px;
+    height: 175px;
+  }
 }

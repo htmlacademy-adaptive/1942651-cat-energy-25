@@ -1,41 +1,50 @@
 .form-programs__title {
-    margin: 0;
-    padding-bottom: 39px;
+  margin: 0;
+  padding-bottom: 39px;
 }
+
 .programs-selection__contacts-data {
-    padding: 26px 0 10px;
+  padding: 26px 0 10px;
 }
+
 .form-programs__coments {
-    padding-bottom: 13px;
+  padding-bottom: 13px;
 }
+
 .form-programs__button-container__button {
-    margin-bottom: 21px;
+  margin-bottom: 21px;
 }
+
 .form-button {
-    padding: 10px 78px;
-    border: 0;
-    font-size: 16px;
-    line-height: 20px;
+  padding: 10px 78px;
+  border: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
+
 .form-programs__button-container__required {
-   display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
 }
+
 @media (min-width: $tablet-width) {
   .form-programs__coments {
     padding-bottom: 61px;
   }
+
   .form-programs__button-container {
     display: grid;
     grid-template-columns: 285px 1fr;
     column-gap: 61px;
   }
+
   .form-programs__button-container__required {
     display: flex;
     align-items: center;
     justify-content: start;
     font-size: 16px;
   }
+
   .form-programs__button-container__button {
     font-size: 20px;
     line-height: 20px;
@@ -43,15 +52,18 @@
     margin: 0;
   }
 }
+
 @media (min-width: $desktop-width) {
   .form-programs__container-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
- }
+  }
+
   .form-programs__coments {
     padding-bottom: 63px;
   }
+
   .form-programs__button-container {
     display: grid;
     grid-template-columns: 568px 1fr;

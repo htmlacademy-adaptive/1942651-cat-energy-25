@@ -1,0 +1,31 @@
+.info {
+  font-family: "Arial", "Helvetical", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  padding-top: 7px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding: 9px 20px 87px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding: 0 0 87px;
+    margin-top: 7px;
+  }
+}

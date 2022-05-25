@@ -1,23 +1,22 @@
-.title-catalog {
+.live-title {
   font-family: "Oswald", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
-  margin: 0;
-  padding-bottom: 41px;
+  line-height: 40px;
 }
 
 @media (min-width: $tablet-width) {
-  .title-catalog {
-    margin: 0;
-    padding-bottom: 163px;
+  .live-title {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 63px;
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .title-catalog {
-    padding-bottom: 167px;
+  .live-title {
+    grid-row: 3/4;
+    padding-bottom: 147px;
   }
 }

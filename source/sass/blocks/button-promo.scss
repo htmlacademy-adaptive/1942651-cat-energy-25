@@ -1,0 +1,27 @@
+.button-promo {
+  margin-top: 2px;
+  padding: 12px 74px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .button-promo {
+    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
+    left: 120px;
+    top: 259px;
+    padding: 16px 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-promo {
+    position: static;
+    padding: 16px 26px;
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+}

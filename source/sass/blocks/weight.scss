@@ -1,0 +1,47 @@
+.weight {
+  display: block;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.weight-loss {
+  width: 80px;
+  position: absolute;
+  top: 46px;
+  left: 20px;
+  background-color: #eaeaea;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .weight {
+    margin: 0;
+    padding: 15px 57px 20px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .weight-loss {
+    width: 114px;
+    font-size: 14px;
+    line-height: 14px;
+    top: 62px;
+    left: 25px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .weight-loss {
+    background-color: #f2f2f2;
+  }
+}

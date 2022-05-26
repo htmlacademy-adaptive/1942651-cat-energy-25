@@ -1,0 +1,27 @@
+.extra-list {
+  display: flex;
+  flex-direction: column;
+
+  @include list-reset;
+  border-top: 1px solid #cdcdcd;
+  padding-top: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-list {
+    border: 1px solid #cdcdcd;
+    border-top: 0;
+    box-sizing: border-box;
+    padding: 0 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-list {
+    width: 895px;
+    border: 0;
+    border-bottom: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    padding: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.live-food-costs {
+  font-family: "Oswald", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .live-food-costs {
+    padding-top: 6px;
+    padding-left: 170px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: end;
+    grid-column: 2/2;
+    grid-row: 3/4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live-food-costs {
+    padding: 0;
+    text-align: start;
+    padding-bottom: 73px;
+    padding-top: 0;
+    grid-column: 1/2;
+    grid-row: 7/8;
+    margin: 0;
+  }
+
+  .live-food-costs__cost {
+    margin-left: 60px;
+  }
+}

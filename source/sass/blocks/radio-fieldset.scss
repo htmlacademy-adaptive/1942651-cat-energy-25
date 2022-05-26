@@ -47,6 +47,12 @@
   left: 7.5px;
 }
 
+.radio-fieldset__label__radio[type="radio"]:disabled + .radio-fieldset__control-mark,
+.radio-fieldset__label__radio[type="radio"]:disabled + .radio-fieldset__control-mark::before,
+.radio-fieldset__label__radio[type="radio"]:disabled ~ .radio-fieldset__name {
+  opacity: 0.3;
+}
+
 .radio-fieldset__list {
   font-family: "Oswald", "Tahoma", sans-serif;
   font-weight: 400;

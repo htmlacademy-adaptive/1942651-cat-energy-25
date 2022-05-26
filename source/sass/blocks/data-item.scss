@@ -1,0 +1,52 @@
+.data-item {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+
+.data-item__label {
+  padding-right: 14px;
+}
+
+.data-item__label--weight {
+  width: 93px;
+}
+
+.data-item__label--age {
+  width: 168px;
+}
+
+.data-item__input {
+  padding: 13px 15px 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .data-item {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+
+  .data-item__input {
+    padding: 9px 15px 11px;
+  }
+
+  .data-item__label {
+    padding-right: 20px;
+  }
+
+  .data-item__label--age {
+    width: 152px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data-item__label--age {
+    width: 155px;
+  }
+}

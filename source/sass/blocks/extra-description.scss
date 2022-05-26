@@ -1,0 +1,29 @@
+.extra-description {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 160px;
+    padding-right: 38px;
+  }
+}

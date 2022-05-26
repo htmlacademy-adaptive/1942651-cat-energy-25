@@ -34,15 +34,6 @@
   text-align: center;
 }
 
-.info-present {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  z-index: 2;
-}
-
 @media (min-width: $tablet-width) {
   .presents {
     margin: 0 auto;
@@ -115,19 +106,5 @@
     margin: 0;
     padding: 187px 40px 0;
     text-align: center;
-  }
-
-  .info-present {
-    font-family: "Arial", "Helvetica", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    z-index: 2;
-  }
-
-  .additional-products__presents {
-    margin-top: 28px;
-    height: 463px;
   }
 }

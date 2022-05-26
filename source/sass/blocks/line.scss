@@ -4,7 +4,8 @@
   &::before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 200vw;
+    left: -100vw;
     height: 2px;
     background-color: #68b738;
     z-index: -1;
@@ -21,21 +22,11 @@
   .line__container {
     max-width: 768px;
   }
-
-  .line::before {
-    width: 150%;
-    left: -39%;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .line {
     width: 1220px;
-  }
-
-  .line::before {
-    width: 158%;
-    left: -30%;
   }
 
   .line__container {

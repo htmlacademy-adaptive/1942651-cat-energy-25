@@ -1,0 +1,22 @@
+.extra-button {
+  border: 0;
+  padding: 10px 110px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-button {
+    grid-column: 1/3;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-button {
+    padding: 10px 97px;
+    grid-column: 3/4;
+  }
+}

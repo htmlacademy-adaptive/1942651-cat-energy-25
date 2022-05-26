@@ -1,0 +1,18 @@
+.product-button {
+  border: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .product-button {
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-button {
+    padding: 10px 0;
+  }
+}

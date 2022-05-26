@@ -29,6 +29,14 @@
   top: 5px;
 }
 
+.additionally__check[type="checkbox"]:disabled + .additionally__control-mark {
+  opacity: 0.3;
+}
+
+.additionally__check[type="checkbox"]:disabled ~ .additionally__name {
+  opacity: 0.3;
+}
+
 .additionally__name {
   padding-left: 46px;
 }
@@ -119,7 +127,7 @@
 
   .additionally__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .additionally__item {

@@ -1,0 +1,23 @@
+.products-list {
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .products-list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 430px 430px 430px 430px;
+    column-gap: 60px;
+    row-gap: 141px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products-list {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: 431px 431px;
+    column-gap: 80px;
+    row-gap: 143px;
+  }
+}

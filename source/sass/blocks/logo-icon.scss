@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .logo-icon__link {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-icon__link picture {
+    display: block;
+    width: 202px;
+    height: 59px;
+    margin: 0;
+  }
+}

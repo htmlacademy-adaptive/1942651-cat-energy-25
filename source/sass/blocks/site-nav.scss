@@ -139,6 +139,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 478px;
+    height: 40px;
   }
 
   .site-nav__burger-button {
@@ -149,7 +150,8 @@
     font-size: 20px;
     line-height: 40px;
     border: 0;
-    z-index: 2;
+    z-index: 3;
+    height: 40px;
 
     & a {
       font-size: 20px;
@@ -167,6 +169,6 @@
     width: 71px;
     height: 2px;
     background-color: #ffffff;
-    bottom: -5px;
+    bottom: 0;
   }
 }
